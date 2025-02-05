@@ -29,9 +29,12 @@ Les éléments suivants ont été soumis au processus de vote et seront inclus d
 
 <iframe class="airtable-embed" src="https://airtable.com/embed/appQvTu1nOy6fJwUP/shrNl0TSZGrqD3REa?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="633" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
-<a class="button no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shraqzpVkb2PlkMnq" target="_blank">Demander un changement</a>
-<a class="button no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shrkMt5JTIiuPFlhY" target="_blank">Ajouter un organisme (producteurs)</a>
-<a class="button no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shrNEkNZ2JBWYdMmw" target="_blank">Ajouter un organisme (application réutilisatrice)</a>
+<div class="button-holder">
+    <a class="md-button md-button--primary no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shraqzpVkb2PlkMnq" target="_blank">Demander un changement</a>
+    <a class="md-button md-button--primary no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shrkMt5JTIiuPFlhY" target="_blank">Ajouter un organisme (producteurs)</a>
+    <a class="md-button md-button--primary no-icon" href="https://airtable.com/appQvTu1nOy6fJwUP/shrNEkNZ2JBWYdMmw" target="_blank">Ajouter un organisme (application réutilisatrice)</a>
+</div>
+
 
 ## S'impliquer
 
