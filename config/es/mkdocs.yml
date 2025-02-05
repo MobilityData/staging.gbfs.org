@@ -16,9 +16,10 @@ validation:
     unrecognized_links: ignore
 
 theme:
+  language: es
   custom_dir: ../../overrides/
-  logo: assets/images/org-black.svg
-  logo_light_mode: assets/images/org-white.svg
+  logo: assets/images/logo.png
+  logo_light_mode: assets/images/logo.png
   favicon: assets/images/favicon.ico
   palette:
     - media: "(prefers-color-scheme: light)"
