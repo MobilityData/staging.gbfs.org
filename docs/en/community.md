@@ -12,7 +12,7 @@ All change proposals are subject to the GBFS governance process.
 - When a vote passes, the change becomes part of a Release Candidate.
 - Once both a data producer and a date consumer have implemented the change, the Release Candidate becomes an official version release.
 
-**[See the Governance Process](../specification/process)**
+**[See the Governance Process](../documentation/process)**
 
 To support this process and ensure it is as timely as possible, MobilityData tracks implementation through one-on-one discussions and other stakeholder events and by examining GBFS datasets. To improve this tracking process, GBFS data producers and consumers are encouraged to add their organization here if they have implemented or are planning on implementing any of these release candidate changes. After votes are called, MobilityData will update this list to reflect organizations that included an implementation note in their vote.
 

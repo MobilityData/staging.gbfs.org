@@ -24,11 +24,11 @@
                     {{text.t("pageTitle")}}
                 </p>
                 <div class="hero-links">
-                    <a href="getting_started/what_is_GTFS/" title="{{ page.next_page.title | striptags }}"
+                    <a href="get-started" title="{{ page.next_page.title | striptags }}"
                         class="md-button md-button--primary">
                         {{text.t("getStartedButton")}}
                     </a>
-                    <a href="documentation/overview/" title="{{ lang.t('source.link.title') }}"
+                    <a href="documentation" title="{{ lang.t('source.link.title') }}"
                         class="md-button md-button--primary">
                         {{text.t("documentationButton")}}
                     </a>
@@ -59,7 +59,7 @@
         <ul class="mdx-list md-typeset">
             <li class="mdx-list-item fade-in">
                 <div class="icon-holder">
-                    <img src="./assets/landing/ico-operators.png">
+                    <img src="./assets/landing/ico-operators.png" alt="Operators Icon">
                 </div>
                 <div class="text-content">
                     <h3>{{text.t("whyUseGbfsBlockTitle1")}}</h3>
@@ -70,7 +70,7 @@
             </li>
             <li class="mdx-list-item fade-in">
                 <div class="icon-holder">
-                    <img src="./assets/landing/ico-transitagencies.png">
+                    <img src="./assets/landing/ico-transitagencies.png" alt="Transit Agencies Icon">
                 </div>
                 <div class="text-content">
                     <h3>{{text.t("whyUseGbfsBlockTitle2")}}</h3>
@@ -80,7 +80,7 @@
             </li>
             <li class="mdx-list-item fade-in">
                 <div class="icon-holder">
-                    <img src="./assets/landing/ico-tripplanners.png">
+                    <img src="./assets/landing/ico-tripplanners.png" alt="Trip Planners Icon">å
                 </div>
                 <div class="text-content">
                     <h3>{{text.t("whyUseGbfsBlockTitle3")}}</h3>
@@ -91,11 +91,11 @@
             </li>
         </ul>
         <div class="button-container ">
-            <a href="getting_started/what_is_GTFS/" title="{{ page.next_page.title | striptags }}"
+            <a href="get-started" title="{{ page.next_page.title | striptags }}"
                 class="md-button md-button--primary">
                 {{text.t("getStartedButton")}}
             </a>
-            <a href="getting_started/what_is_GTFS/" title="{{ page.next_page.title | striptags }}"
+            <a href="documentation" title="{{ page.next_page.title | striptags }}"
                 class="md-button md-button--primary">
                 {{text.t("documentationButton")}}
             </a>
@@ -114,7 +114,7 @@
             <div class="mdx-spotlight__feature reverse">
                 <a href="getting_started/what_is_GTFS/" tabindex="-1" title="Why GTFS" class="fade-in-2">
                     <img src="./assets/landing/GBFS_StationBased.png" alt="GTFS Static" loading="lazy" width="500"
-                        height="327">
+                        height="327" alt="Station Based Systems">
                 </a>
                 <div class="md-typeset spotlight-content fade-in-2">
                     <p class="mdx-spotlight__header">
@@ -127,11 +127,11 @@
                     </ul>
 
                     <div class="mdx-spotlight__links">
-                        <a href="getting_started/what_is_GTFS/" title="{{ page.next_page.title | striptags }}"
+                        <a href="get-started" title="{{ page.next_page.title | striptags }}"
                             class="md-button md-button--primary">
                             {{text.t("getStartedButton")}}
                         </a>
-                        <a href="getting_started/what_is_GTFS/" title="{{ page.next_page.title | striptags }}"
+                        <a href="documentation" title="{{ page.next_page.title | striptags }}"
                             class="md-button md-button--primary">
                             {{text.t("documentationButton")}}
                         </a>
@@ -144,7 +144,7 @@
             <div class="mdx-spotlight__feature mdx-spotlight__feature--no-button-margin">
                 <a href="setup/setting-up-site-search/" tabindex="-1" title="Built-in search" class="fade-in-2">
                     <img src="./assets/landing/GBFS_DockBased.png" alt="GTFS Realtime" loading="lazy" width="500"
-                        height="327">
+                        height="327" alt="Dock Based Systems">
                 </a>
                 <div class="md-typeset spotlight-content fade-in-2">
                     <p class="mdx-spotlight__header">
@@ -156,11 +156,11 @@
                         <li>{{text.t("dbsPaymentMethods")}}</li>
                     </ul>
                     <div class="mdx-spotlight__links">
-                        <a href="documentation/overview/#gtfs-realtime" title="{{ page.next_page.title | striptags }}"
+                        <a href="get-started" title="{{ page.next_page.title | striptags }}"
                             class="md-button md-button--primary">
                             {{text.t("getStartedButton")}}
                         </a>
-                        <a href="documentation/overview/#gtfs-realtime" title="{{ page.next_page.title | striptags }}"
+                        <a href="documentation" title="{{ page.next_page.title | striptags }}"
                             class="md-button md-button--primary">
                             {{text.t("documentationButton")}}
                         </a>
@@ -198,33 +198,33 @@
 
         <div class="mdx-socials md-typeset">
             <figure class="mdx-socials__element fade-in-3">
-                <img src="./assets/landing/slack-icon.png">
+                <img src="./assets/landing/slack-icon.png" alt="Slack Icon">
                 <div class="md-typeset mdx-socials__content">
                     <h3>Slack</h3>
                     <p class="">{{text.t("helpDevelopFutureSlackText")}}</p>
                     <a href="https://share.mobilitydata.org/slack" target="_blank"
-                        title="{{ page.next_page.title | striptags }}" class="md-button md-button--primary">
+                        class="md-button md-button--primary">
                         {{text.t("helpDevelopFutureSlackButton")}}
                     </a>
                 </div>
             </figure>
             <figure class="mdx-socials__element fade-in-3">
-                <img src="./assets/landing/github-icon.png">
+                <img src="./assets/landing/github-icon.png" alt="GitHub Icon">
                 <div class="md-typeset mdx-socials__content">
                     <h3>GitHub</h3>
                     <p>{{text.t("helpDevelopFutureGitHubText")}}</p>
-                    <a href="https://github.com/google/transit" target="_blank"
+                    <a href="https://github.com/MobilityData/gbfs" target="_blank"
                         title="{{ page.next_page.title | striptags }}" class="md-button md-button--primary">
                         {{text.t("helpDevelopFutureGitHubButton")}}
                     </a>
                 </div>
             </figure>
             <figure class="mdx-socials__element fade-in-3">
-                <img src="./assets/landing/share-icon.png">
+                <img src="./assets/landing/share-icon.png" alt="Share Icon">
                 <div class="md-typeset mdx-socials__content">
                     <h3>{{text.t("helpDevelopFutureDigestSubtitle")}}</h3>
                     <p>{{text.t("helpDevelopFutureDigestText")}}</p>
-                    <a href="https://gtfs.org/blog/" title="{{ page.next_page.title | striptags }}"
+                    <a href="https://github.com/MobilityData/gbfs/discussions/categories/announcements" target="_blank"
                         class="md-button md-button--primary">
                         {{text.t("helpDevelopFutureDigestButton")}}
                     </a>
@@ -238,7 +238,7 @@
                 <p>
                     {{text.t("helpDevelopFutureCommResourcesText")}}
                 </p>
-                <a href="resources/overview/" title="{{ page.next_page.title | striptags }}"
+                <a href="tools" title="{{ page.next_page.title | striptags }}"
                     class="md-button md-button--primary">
                     {{text.t("helpDevelopFutureCommResourcesButton")}}
                 </a>
@@ -248,7 +248,7 @@
                 <p>
                     {{text.t("helpDevelopFutureNextFeaturesText")}}
                 </p>
-                <a href="community/get_involved/#active-projects" title="{{ page.next_page.title | striptags }}"
+                <a href="community"
                     class="md-button md-button--primary">
                     {{text.t("helpDevelopFutureNextFeaturesButton")}}
                 </a>

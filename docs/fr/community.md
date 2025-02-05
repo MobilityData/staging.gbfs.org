@@ -12,7 +12,7 @@ Toutes les propositions de modification sont soumises au processus de gouvernanc
 - Lorsqu'un vote est adopté, la modification fait partie d'une version candidate.
 - Lorsqu'un producteur de données et une application réutilisatrice de données ont tous deux mis en œuvre la modification, la version candidate devient une version officielle.
 
-**[Voir le processus de gouvernance](../specification/process)**
+**[Voir le processus de gouvernance](../documentation/process)**
 
 Pour soutenir ce processus et s'assurer qu'il est aussi rapide que possible, MobilityData suit la mise en œuvre par le biais de discussions individuelles et d'autres événements avec les parties prenantes, ainsi qu'en examinant les ensembles de données GBFS. Pour améliorer ce processus de suivi, les producteurs et les applications réutilisatrices de données GBFS sont encouragés à ajouter leur organisation ici s'ils ont mis en œuvre ou prévoient de mettre en œuvre l'un de ces changements de la version candidate. Après les votes, MobilityData mettra à jour cette liste pour refléter les organisations qui ont inclus une note de mise en œuvre dans leur vote.
 

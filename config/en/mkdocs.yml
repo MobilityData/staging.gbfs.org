@@ -109,13 +109,13 @@ plugins:
 
 nav:
   - Home: index.md
-  - Get started: guide.md
+  - Get started: get-started.md
   - Documentation:
-    - specification/index.md
-    - Current Version: specification/reference.md
-    - Governance Process: specification/process.md
-    - Data Quality: specification/data-quality.md
-    - Data Policy: specification/data-policy.md
-    - FAQ: specification/faq.md
+    - documentation/index.md
+    - Current Version: documentation/reference.md
+    - Governance Process: documentation/process.md
+    - Data Quality: documentation/data-quality.md
+    - Data Policy: documentation/data-policy.md
+    - FAQ: documentation/faq.md
   - Tools: tools.md
   - Community: community.md
