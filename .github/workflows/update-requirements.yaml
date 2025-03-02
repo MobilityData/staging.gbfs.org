@@ -45,14 +45,10 @@ jobs:
             echo "changes=true" >> $GITHUB_ENV
           fi
 
-      - name: Create Branch Name
-        id: createbranchname
-        if: env.changes == 'true'
-        env:
-          GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
+      - name: Create branch name
+        id: create_branch_name
         run: |
-          branch_name="update-requirements-$(date +'%Y%m%d')"
-          echo "branchname=$(branch_name)" >> $GITHUB_ENV
+            echo "BRANCH=update-requirements-${{ env.TODAYS_YEAR }}-${{ env.TODAYS_MONTH }}-${{ env.TODAYS_DAY }}" >> $GITHUB_OUTPUT
 
       - name: Create Pull Request
         id: createpr
@@ -62,8 +58,7 @@ jobs:
           token: ${{ env.GITHUB_TOKEN }}
           sign-commits: true
           assignees: "fredericsimard"
-          branch: ${{ env.branchname }}
+          branch: ${{ steps.create_branch_name.outputs.BRANCH }}
           commit-message: 'This PR updates the `requirements.txt` file with the latest versions of dependencies.'
           title: 'Monthly `requirements.txt` update'
-          body: |
-            This PR updates the `requirements.txt` file with the latest versions of dependencies.
+          body: 'This PR updates the `requirements.txt` file with the latest versions of dependencies.'
