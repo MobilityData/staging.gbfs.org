@@ -27,20 +27,12 @@ jobs:
             OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
             GITHUB_TOKEN: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/GitHub generic action token for all repos/credential"
 
-      - name: Create virtual environment
+      - name: Install pur and update requirements file
         run: |
           python -m venv venv
           source venv/bin/activate
           python -m pip install --upgrade pip
-
-      - name: Install pur
-        run: |
-          source venv/bin/activate
           pip install pur
-
-      - name: Update requirements.txt
-        run: |
-          source venv/bin/activate
           pur -r requirements.txt
 
       - name: Check for changes
@@ -59,7 +51,7 @@ jobs:
           GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
         run: |
           branch_name="update-requirements-$(date +'%Y%m%d')"
-          echo "branchname=branch_name" >> $GITHUB_ENV
+          echo "branchname=$(branch_name)" >> $GITHUB_ENV
 
       - name: Create Pull Request
         id: createpr
