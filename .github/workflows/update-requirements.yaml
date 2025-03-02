@@ -38,7 +38,6 @@ jobs:
 
       - name: Remove venv from git tracking
         run: |
-          git reset --hard
           git clean -fdX venv
 
       - name: Check for changes
