@@ -36,6 +36,11 @@ jobs:
           pur -r requirements.txt
           deactivate
 
+      - name: Remove venv from git tracking
+        run: |
+          git reset --hard
+          git clean -fdX venv
+
       - name: Check for changes
         id: check_changes
         run: |
