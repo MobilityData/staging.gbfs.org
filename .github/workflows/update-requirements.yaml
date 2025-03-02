@@ -39,11 +39,19 @@ jobs:
       - name: Check for changes
         id: check_changes
         run: |
-          if git diff --exit-code; then
+          if git diff --exit-code requirements.txt; then
             echo "changes=false" >> $GITHUB_ENV
           else
             echo "changes=true" >> $GITHUB_ENV
           fi
+
+      - name: Commit updated requirements.txt
+        if: env.changes == 'true'
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add requirements.txt
+          git commit -m "Update requirements.txt"
 
       - name: Create branch name
         id: create_branch_name
@@ -62,3 +70,4 @@ jobs:
           commit-message: 'This PR updates the `requirements.txt` file with the latest versions of dependencies.'
           title: 'Monthly `requirements.txt` update'
           body: 'This PR updates the `requirements.txt` file with the latest versions of dependencies.'
+
