@@ -10,6 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Setup global variables
+        id: global_vars
+        run: |
+            echo "TODAYS_DAY=$(date '+%d')" >> $GITHUB_ENV # Ex.: 27
+            echo "TODAYS_MONTH=$(date '+%m')" >> $GITHUB_ENV # Ex.: 07
+            echo "TODAYS_YEAR=$(date '+%Y')" >> $GITHUB_ENV # Ex.: 2023
+            
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -29,12 +36,8 @@ jobs:
 
       - name: Install pur and update requirements file
         run: |
-          python -m venv venv
-          source venv/bin/activate
-          python -m pip install --upgrade pip
-          pip install pur
+          pip install --upgrade pur
           pur -r requirements.txt
-          deactivate
 
       - name: Remove venv from git tracking
         run: |
@@ -48,14 +51,6 @@ jobs:
           else
             echo "changes=true" >> $GITHUB_ENV
           fi
-
-      - name: Commit updated requirements.txt
-        if: env.changes == 'true'
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          git add requirements.txt
-          git commit -m "Update requirements.txt"
 
       - name: Create branch name
         id: create_branch_name
